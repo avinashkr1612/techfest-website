@@ -1,0 +1,57 @@
+.animate-bg {
+animation: bg_animation 10s infinite;
+}
+
+
+@keyframes bg_animation {
+  0% {background: #33ccff;}
+  25%{background:#ff66ff}
+  50%{background: #ffff00}
+  75%{background: #00ff00}
+  100%{background:  #33ccff}
+}
+.is-circle{
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(50,50,50,.5);
+}
+.is-curved-edge{
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(50,50,50,.5);
+}
+
+.columns .column .image{
+    box-shadow: 10px 10px 10px rgba(50,50,50,.5);
+    width: 220px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+footer{
+  background: rgba(50,50,50,.5);
+}
+.card_footer{
+  position: absolute;
+  display: inline-block;
+
+  bottom: 0px;
+}
+
+.social{
+  padding-top:10px;
+  transition: .4s ease;
+  opacity: 0;
+  -webkit-transform: translateY(40px) scale(0);
+  -ms-transform: translateY(40px) scale(0);
+  transform: translateY(40px) scale(0);
+  will-change: transform;
+}
+
+.social .ln img, .social .fb img, .social .ig img, .social .tw img{
+  width: 3vw;
+}
+
+.colmns .column .image:hover{
+    box-shadow: 10px 10px 10px rgba(50,50,50,.5);
+    width: 222px;
+    height: 260px;
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'aileronsregular';
+    src: url('ailerons-webfont.woff2') format('woff2'),
+         url('ailerons-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'samarkan';
+    src: url('SAMARO__.woff') format('woff'),
+         url('SAMARN__.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

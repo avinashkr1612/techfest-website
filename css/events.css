@@ -1,0 +1,13 @@
+
+
+@media screen and (min-width: 1000px) {
+  .column  .figure{
+    padding:10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .column  .figure{
+    padding: 0px 50px;
+  }
+}

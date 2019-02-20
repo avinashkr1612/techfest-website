@@ -1,0 +1,53 @@
+/* Header */
+.content {
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+
+}
+
+.header .content {
+ /* background-image: url('../img/7040754-tokyo-city-at-twilight.jpg'); */
+	/* background-image: url('http://szzljy.com/data/27/hd-wallpaper-retro/hd-wallpaper-retro-19.jpg');  */
+	/* background-image: url('https://c.pxhere.com/photos/07/14/new_york_skyscrapers_high_rises_buildings_metropole_cityscape_urban_usa-947000.jpg!d'); */
+	/* background-image: url('../img/TWDS_930x400_websitebannerV2.png'); */
+	/* background: linear-gradient(135deg, #21d4fd 25%, #b721ff 75%); */
+	/* background: #ffd44f; */
+	/* background-image: url('../img/leap.gif'); */
+	/* background-size: 400px auto;
+	background-position: bottom;
+	background-repeat: no-repeat; */
+	/* background: url('../img/bg4.jpeg'); */
+	/* background: url('https://i.redd.it/1htvyw5zhum11.png'); */
+
+	background: linear-gradient(90deg, #25fccd, #bf22f9, #f93722, #2cbaa6, #f4f442);
+	background-size: 500% 500%;
+	animation: AnimationName 31s ease infinite;
+
+
+	/* background: url('https://static.tumblr.com/vqq0rjq/dPcmd2twh/amy-lee-black-background-31000.gif');
+	background-image: url('../img/dark-denim-3.png');
+	background-repeat: repeat; */
+
+}
+
+
+@keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+
+
+.demo-1 .main-title{
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title{
+		font-size: 3em;
+	}
+}

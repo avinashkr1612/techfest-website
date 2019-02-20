@@ -1,0 +1,454 @@
+@font-face {
+font-family: 'Samarkan Normal';
+font-style: normal;
+font-weight: normal;
+src: local('Samarkan Normal'), url('../fonts/SAMARN__.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Samarkan Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Samarkan Oblique'), url('../fonts/SAMARO__.woff') format('woff');
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(14,14,14);
+}
+
+.is-centered{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.techcurio-banner{
+  font-family: 'samarkan', cursive;
+  font-size:40px;
+  margin:0px;
+  font-weight:400;
+}
+
+.is-transparent{
+  background: rgba(100, 100, 100, 0.2);
+}
+
+.reg-success{
+
+}
+
+#menu-toggle{
+  position: fixed;
+  z-index: 1000;
+  right: 15px;
+  font-size: 40px;
+  outline: none;
+  border: none;
+  top: 15px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+}
+
+.about-techcurio{
+  /* background: linear-gradient(to right, #66ffff 0%, #ffff66 100%); */
+  position: relative;
+    background-image: url('../img/DSCN0871.jpg');
+  /* background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/00/13/01/955641e4c340227.jpg'); */
+  /* background-repeat: repeat; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  overflow: hidden;
+  border-bottom: 5px solid #fff;
+}
+
+/* .about-techcurio:after{
+  content: '';yyyyy
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(102, 255, 255, 0.5) 0%, rgba(255, 255, 102, 0.5) 100%);
+
+  /* background: linear-gradient(233deg, #5bfc25, #25fccd, #2263f9, #bf22f9, #f93722, #2cbaa6, #f4f442);
+  background-size: 1200% 1200%;
+  background-position: center;
+  	animation: AnimationName 40s ease infinite;
+    opacity: .6; */
+} */
+
+@keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+
+.about-dtc{
+  /* background: linear-gradient(to right, rgba(102, 255, 255, 0.5) 0%, rgba(255, 255, 102, 0.5) 100%); */
+      background-image: url('../img/dtc.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: -20px 0 20px #333;
+  padding: 50px 0px;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+
+.about-techcurio > .hero{
+box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+border-radius:50%;
+height:700px;
+width:700px;
+padding:40px 70px;
+position:absolute;
+z-index:1000;
+}
+
+/* .about-dtc:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(102, 255, 255, 1) 0%, rgba(255, 255, 102, 1) 100%);
+  opacity: .6;
+  /* background: linear-gradient(233deg, #5bfc25, #25fccd, #2263f9, #bf22f9, #f93722, #2cbaa6, #f4f442);
+  background-size: 1200% 1200%;
+  background-position: center;
+  	animation: AnimationName 40s ease infinite;
+ */
+} */
+
+.about-dtc ::selection {
+    color: #fff;
+    background: #000;
+}
+.is-center{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width:400px) {
+  .reg_container{
+    width: 100%;
+  }
+  .container{
+    padding: 10px;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media screen and (max-width:768px){
+  .columns{
+    display: block;
+  }
+
+}
+
+.perspective {
+  background: linear-gradient(135deg, #21d4fd 25%, #b721ff 75%);
+  background: url('../img/yellow-bg.png');
+    /* background: rgb(14,14,14); */
+  /* background-image: url('../img/sidebar-background.png'); */
+  /* background-image: url('../img/bg.png'); */
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+	position: fixed;
+  -webkit-perspective: 1500px; /* Safari 4-8  */
+  perspective: 1500px;
+  overflow: hidden;
+}
+
+.separator{
+    border: 0;
+    position: relative;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+#reg_buttons{
+  display: inline-flex;
+}
+
+
+.p-container{
+position: absolute;
+width: 100%;
+transition: transform 0.4s;
+height: 100%;
+}
+
+.p-container.moveleft{
+  transform: translateX(-50%) rotateY(45deg) translateZ(-50px);
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  courser:pointer;
+  box-shadow: 10px 10px 500px #333;
+}
+
+.outer-nav {
+	position: absolute;
+	height: auto;
+	font-size: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25%;
+  overflow: hidden;
+}
+
+@media screen and (max-width:600px) {
+  .outer-nav {
+    right: 17%;
+  }
+}
+.separator{
+  width: 80%;
+}
+.outer-nav a {
+	display: block;
+	font-weight: 400;
+  color: #000;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  opacity: 0;
+-webkit-transform: translateX(100px) translateZ(-1000px);
+transform: translateX(100px) translateZ(-1000px);
+-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+transition: transform 0.4s, opacity 0.4s;
+}
+.paint-bg{
+  background: url('../img/button-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-family: calibri;
+  margin-top: 15px;
+}
+
+.outer-nav a:hover {
+      color: #333;
+      -webkit-transform: translateY(0) scale(1);
+      -ms-transform: translateY(0) scale(1);
+      transform: translateY(0) scale(1);
+
+}
+
+
+.caption{
+  /* font-family: 'Londrina Shadow', cursive; */
+  font-family: 'Berkshire Swash', cursive;
+  position: absolute;
+  display: inline-table;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+
+
+.outer-nav.animate a {
+    opacity: 1;
+    -webkit-transform: translateX(0) translateZ(0);
+    transform: translateX(0) translateZ(0);
+}
+
+@-webkit-keyframes bounce{0%,20%,50%,80%,to{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}60%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}}
+@keyframes bounce{0%,20%,50%,80%,to{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}60%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}}
+
+
+@media screen and (max-width: 768px) {
+  /* .ceas-logo{
+    width: 96px;
+    height: auto;
+  }
+  .ceas-logo img{
+    width: 96px;
+    height: auto;
+  } */
+}
+
+.techcurio-banner{
+  font-family: 'samarkan', cursive;
+  font-size:100px;
+  margin:0px;
+  font-weight:400
+}
+
+.techcurio-caption{
+  color:aqua;
+  font-family:aileronsregular;
+}
+.t-date{
+  font-family: 'aileronsregular', sans-serif;
+  margin-top:20px;
+  font-weight:400
+  font-size:40px;
+}
+
+.dtc-name{
+  font-size: 40px
+}
+
+.about-dtc > .hero{
+  border-radius:50%;
+  height:700px;
+  width:700px;
+  padding:40px 70px;
+  float:right;
+}
+
+.about-dtc > .hero > p{
+font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .techcurio-banner{
+      font-size: 90px;
+  }
+
+  .techcurio-caption{
+    color:aqua;
+    font-family:aileronsregular;
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .t-date{
+    font-family: 'aileronsregular', sans-serif;
+    margin-top:20px;
+    font-weight:400
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .college-name{
+    font-size: 20px;
+  }
+
+  .dtc-affiliated{
+    font-size: 16px;
+  }
+
+  #menu-toggle{
+    right: 10px;
+    font-size: 40px;
+    top: 10px;
+  }
+
+  .about-techcurio{
+    padding: 0px;
+    height: 100%;
+  }
+
+  .about-techcurio > .hero{
+  border-radius:0;
+  height:auto;
+  width:100%;
+  padding:40px 40px;
+  position:absolute;
+  z-index:1000;
+  }
+
+  .about-dtc{
+    padding: 0px;
+    height: 100%;
+  }
+
+  .about-dtc > .hero{
+  font-size: 16px;
+  border-radius:0;
+  height:auto;
+  width:100%;
+  padding:40px 70px;
+  position:absolute;
+  z-index:1000;
+  }
+}
+
+
+@media screen and (max-width:650px){
+  .about-dtc > .hero{
+    padding:40px 0px;
+  }
+
+  .about-techcurio > .hero{
+    padding:40px 0px;
+  }
+
+
+
+}
+@media screen and (max-width: 360px) {
+  .techcurio-banner{
+      font-size: 64px;
+  }
+
+  #reg_buttons{
+    display: inline-block;
+  }
+  
+
+  .paint-bg{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.about-techcurio > hero, .about-techcurio {
+    height: 120%;
+}
+
+.about-dtc {
+    height: 120%;
+    margin-top:10px;
+}
+
+  .techcurio-caption{
+    color:aqua;
+    font-family:aileronsregular;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    margin-top: 20px;
+  }
+  .t-date{
+    font-family: 'aileronsregular', sans-serif;
+    margin-top:20px;
+    font-weight:400
+    font-size:40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+  #menu-toggle{
+    right: 0px;
+    font-size: 30px;
+    top: 0px;
+  }
+  .college-name{
+    font-size: 14px;
+  }
+}

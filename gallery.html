@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/bulma.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/events.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/slider.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- <meta http-equiv="refresh" content="3"> -->
+</head>
+<body>
+  <div id="perspective">
+  <div id="container" class="p-container">
+    <div class="header">
+      <div class="content">
+        <div class="hero">
+          <div class="hero-body" style="padding-bottom:0px;">
+            <h1 class="title is-1 has-text-centered" style="font-family:Brush Script MT;color:#fff;">
+              Gallery
+            </h1>
+            <br>
+          </div>
+        </div>
+      <div class="container">
+  <div class="tile is-ancestor">
+  <div class="tile is-vertical is-9">
+  <div class="tile is-parent">
+    <div class="slider">
+      <div class="img curry"><img src="img/gallery/img2.JPG" alt=""> </div>
+      <div class="img"><img src="img/gallery/img6 .JPG" alt=""> </div>
+      <div class="img"><img src="img/gallery/img4.JPG" alt=""></div>
+      <div class="img"><img src="img/gallery.img5.JPG" alt=""></div>
+
+      <div class="nav-left">
+        <div class="prev n"><a class="previous round" href="#"> < </a></div>
+      </div>
+      <div class="nav-right">
+        <div class="next n"><a class="previous round" href="#"> > </a></div>
+      </div>
+    </div>
+  </div>
+  <div class="tile">
+    <div class="tile is-parent ">
+      <figure>
+          <img src="img/gallery/img3.JPG" alt="">
+      </figure>
+    </div>
+    <div class="tile is-parent">
+      <figure>
+          <img src="img/gallery/img7.JPG" alt="">
+      </figure>
+    </div>
+    <div class="tile is-parent">
+      <figure>
+          <img src="img/gallery/img8.JPG" alt="">
+      </figure>
+    </div>
+  </div>
+</div>
+      <div class="tile is-parent">
+          <div class="vertical-gallery">
+              <img src="img/gallery/img9.JPG" alt="">
+              <img src="img/gallery/img10.JPG" alt="">
+              <img src="img/gallery/img12.JPG" alt="">
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      </div>
+          <div class="footer hero is-dark" style="position:relative; bottom:0px;font-family:calibri;text-transform:uppercase;margin-top:20px">
+            <div class="columns">
+              <div class="column has-text-centered">
+                <figure class="image is-64x64 is-centered">
+                    <img src="img/logo-ceas.png" alt="">
+                </figure>
+                <div class="subtitle is-6">
+                  Department Of Civil Engineering <br>
+                  Delhi Technical Campus,<br>
+                  Gr. Noida,<br> Delhi-NCR - 201306
+                </div>
+              </div>
+              <div class="column has-text-centered" style="text-align:justify;display:grid;">
+
+
+                    <div class="title is-5 is-spaced" style="padding:5px;">
+                      Contact Us
+                      <hr>
+                    </div>
+                    <div class="subtitle is-6">
+                      Raushan Jaiswal - 9801975033<br>
+                      Ankit Kumar - 9110170825
+                    </div>
+                </div>
+                <div class="column" style="display:grid">
+
+                        <h1 class="title is-5 has-text-centered is-spaced">Mail Us Here</h1>
+                        <hr>
+                        <h1 class="subtitle is-6 has-text-centered"> info@techcurio.co.in </h1>
+
+                  </div>
+
+                <br>
+                <br>
+
+              </div>
+
+              </div>
+<!-- header -->
+
+
+    </div><!-- /container -->
+
+  </div>
+  <nav id="outer-nav" class="outer-nav">
+    <a href="index.html" class="icon-home">Home</a>
+    <a href="events.html" class="icon-news">Events</a>
+    <a href="gallery.html" class="icon-image">Gallery</a>
+    <a href="team.html" class="icon-lock">Team</a>
+    <a href="assets/event-schedule.pdf" class="icon-lock">Schedule</a>
+    <a href="contactUs.html" class="icon-mail">Contact Us</a>
+    <!-- <a href="hospitality.html" class="icon-mail">Hospitality</a> -->
+  </nav>
+</div>
+      <button type="button" id="menu-toggle" class="button is-warning is-large" name="button">&#9776;</button>
+  <!-- <script src="js/TweenLite.min.js"></script>
+  <script src="js/EasePack.min.js"></script>
+  <script src="js/demo-1.js"></script> -->
+
+
+  <script src="js/jquery.hover3d.js" ></script>
+  <script src="js/JavaScript_Main.js" ></script>
+
+
+  <script type="text/javascript">
+  $(".scrolldown").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".about").offset().top},
+          'slow');
+  });
+
+  $("#menu-toggle").click(function() {
+    $('#perspective').addClass("perspective");
+    $('.p-container').addClass("moveleft");
+    $('#menu-toggle').addClass("hidden");
+    $('#outer-nav').addClass("animate");
+  });
+
+  $("#container").click(function() {
+      $('#container').removeClass("moveleft");
+      $('#menu-toggle').removeClass("hidden");
+      $('#outer-nav').removeClass("animate");
+      setTimeout(function() {
+        $('#perspective').delay("slow").removeClass("perspective");
+      }, 400);
+
+  });
+  </script>
+
+<script type="text/javascript">
+function toggle_all() {
+  removeActive();
+  hideAll();
+  $("#tg_all").addClass("is-active");
+  $("#all").removeClass("hidden");
+}
+function toggle_technical() {
+  removeActive();
+  hideAll();
+  $("#tg_t").addClass("is-active");
+  $("#technical").removeClass("hidden");
+}
+function toggle_non_technical() {
+  removeActive();
+  hideAll();
+  $("#tg_nt").addClass("is-active");
+  $("#non-technical").removeClass("hidden");
+}
+function removeActive() {
+  $("#tg_all").removeClass("is-active");
+  $("#tg_t").removeClass("is-active");
+  $("#tg_nt").removeClass("is-active");
+}
+function hideAll() {
+  $("#all").addClass("hidden");
+  $("#technical").addClass("hidden");
+  $("#non-technical").addClass("hidden");
+}
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.next').click(function() {
+  var currentImage = $('.img.curry');
+  var currentImageIndex = $('.img.curry').index();
+  var nextImageIndex = currentImageIndex + 1;
+  var nextImage = $('.img').eq(nextImageIndex);
+  currentImage.fadeOut(1000);
+  currentImage.removeClass('curry');
+  if (nextImageIndex == ($('.img:last').index() + 1)) {
+    $('.img').eq(0).fadeIn(1000);
+    $('.img').eq(0).addClass('curry');
+  } else {
+    nextImage.fadeIn(1000);
+    nextImage.addClass('curry');
+  }
+});
+
+$('.prev').click(function() {
+  var currentImage = $('.img.curry');
+  var currentImageIndex = $('.img.curry').index();
+  var prevImageIndex = currentImageIndex - 1;
+  var prevImage = $('.img').eq(prevImageIndex);
+
+  currentImage.fadeOut(1000);
+  currentImage.removeClass('curry');
+  prevImage.fadeIn(1000);
+  prevImage.addClass('curry');
+});
+
+});
+</script>
+</body>
+</html>
